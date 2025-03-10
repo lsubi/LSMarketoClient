@@ -1,0 +1,34 @@
+{
+    "name": "lsubirana/marketo-rest-client",
+    "description": "A PHP client for the Marketo REST API. Forked from https://github.com/vpmv/marketo-client by Kristen Kehlenbeck & Valentijn Verhallen.",
+    "keywords": ["marketo", "marketo api"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Louis Subirana",
+            "email": "louis@subirana.ca"
+        }
+    ],
+    "require-dev": {
+        "mockery/mockery": "*",
+        "squizlabs/php_codesniffer": "~3.6",
+        "phpunit/phpunit": "^9"
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "psr/http-message": "^1.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "league/oauth2-client": "^2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Netitus\\Marketo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Netitsu\\Marketo\\Tests\\": "tests/"
+        }
+    }
+}
